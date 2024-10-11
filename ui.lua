@@ -300,14 +300,14 @@ function library.NEWS(library, name, theme)
 
 local TweenService = game:GetService("TweenService")
 local textLabel = script.Parent 
-
+local Colour = Color3.fromRGB(0, 120, 215) --名字颜色
 
 if theme == 'dark' then
     MainColor = Color3.fromRGB(5, 5, 5)
     Background = Color3.fromRGB(0, 0, 0)
     zyColor = Color3.fromRGB(10, 10, 10)
     beijingColor = Color3.fromRGB(105, 105, 105)
-    TextColor = Color3.fromRGB(255, 255, 255) --名字颜色
+    TextColor = Colour
     interfaceTransparency = 0.600 --界面透明
     NameTransparency = 0  --名字透明
 else
@@ -315,7 +315,7 @@ else
     Background = Color3.fromRGB(0, 0, 0)
     zyColor = Color3.fromRGB(10, 10, 10)
     beijingColor = Color3.fromRGB(105, 105, 105)
-    TextColor = Color3.fromRGB(255, 255, 255) --名字颜色
+    TextColor = Colour
     interfaceTransparency = 0.600 --界面透明
     NameTransparency = 0  --名字透明
 end
