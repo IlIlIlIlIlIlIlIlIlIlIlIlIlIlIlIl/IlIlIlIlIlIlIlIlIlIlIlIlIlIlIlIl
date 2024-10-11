@@ -300,7 +300,7 @@ function library.NEWS(library, name, theme)
 
 local TweenService = game:GetService("TweenService")
 local textLabel = script.Parent 
-local Colour = Color3.fromRGB(0, 120, 215)--名字颜色
+local Colour = Color3.fromRGB(0, 255, 255)--名字颜色
 
 if theme == 'dark' then
     MainColor = Color3.fromRGB(5, 5, 5)
