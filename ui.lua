@@ -29,7 +29,7 @@ local function createRainbowEffect(label)
         Color3.fromRGB(255, 0, 127),
         Color3.fromRGB(0, 255, 0),
         Color3.fromRGB(127, 0, 255),
-        Color3.fromRGB(255, 0, 0),
+        Color3.fromRGB(255, 0, 0)
     }
 
     for _, color in ipairs(tweenColorSequence) do
