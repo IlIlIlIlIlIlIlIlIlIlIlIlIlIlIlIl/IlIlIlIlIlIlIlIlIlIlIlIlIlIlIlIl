@@ -23,13 +23,13 @@ local animating = false
 local function createRainbowEffect(label)
     local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true)
     local tweenColorSequence = {
-        Color3.fromRGB(255, 0, 0)
-        Color3.fromRGB(255, 127, 0)
-        Color3.fromRGB(0, 127, 255)
-        Color3.fromRGB(255, 0, 127)
-        Color3.fromRGB(0, 255, 0)
-        Color3.fromRGB(127, 0, 255)
-        Color3.fromRGB(255, 0, 0)
+        Color3.fromRGB(255, 0, 0),
+        Color3.fromRGB(255, 127, 0),
+        Color3.fromRGB(0, 127, 255),
+        Color3.fromRGB(255, 0, 127),
+        Color3.fromRGB(0, 255, 0),
+        Color3.fromRGB(127, 0, 255),
+        Color3.fromRGB(255, 0, 0),
     }
 
     for _, color in ipairs(tweenColorSequence) do
