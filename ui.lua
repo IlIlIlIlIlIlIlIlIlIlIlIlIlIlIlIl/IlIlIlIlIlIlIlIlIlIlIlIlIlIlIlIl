@@ -54,7 +54,7 @@ else
     local titleLabel = Instance.new("TextLabel", fullScreenFrame)
     titleLabel.Size = UDim2.new(1, 0, 0, 60)
     titleLabel.Position = UDim2.new(0, 0, 0, 0)
-    titleLabel.Text = "云脚本提示"
+    titleLabel.Text = "抱歉打扰一下"
     titleLabel.TextColor3 = Color3.new(1, 1, 1)
     titleLabel.TextScaled = true
     titleLabel.BackgroundTransparency = 1
