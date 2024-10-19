@@ -64,7 +64,7 @@ else
     local textLabel1 = Instance.new("TextLabel", fullScreenFrame)
     textLabel1.Size = UDim2.new(1, 0, 0, 80)
     textLabel1.Position = UDim2.new(0, 0, 0.135, 0)
-    textLabel1.Text = "请搜索并加入‘云脚本’群组以使用云脚本\n 2024年10月20日后，未加入群组不可使用云脚本"
+    textLabel1.Text = "请搜索并加入‘云脚本’群组以使用云脚本跳过界面\n 2024年10月20日后，未加入群组使用云脚本不跳过界面（等待15秒）"
     textLabel1.TextColor3 = Color3.new(1, 1, 1) 
     textLabel1.TextScaled = true
     textLabel1.BackgroundTransparency = 1
@@ -83,7 +83,7 @@ else
     local exitButton = Instance.new("TextButton", fullScreenFrame)
     exitButton.Size = UDim2.new(0, 150, 0, 50)
     exitButton.Position = UDim2.new(1, -160, 1, -60)
-    exitButton.Text = "拒绝，我要使用云脚本"
+    exitButton.Text = "退出界面"
     exitButton.TextColor3 = Color3.new(1, 1, 1)
     exitButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
     exitButton.BorderSizePixel = 0
@@ -92,7 +92,7 @@ else
     exitButton.MouseButton1Click:Connect(function()
         screenGui.Enabled = false 
     end)
-
+wait(15)
     local function createFadeInAnimation(frame)
         if not animating then 
             animating = true
