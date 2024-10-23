@@ -17,7 +17,6 @@ local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local lc = Players.LocalPlayer
 local group = 35063130
-local grouplink = "云脚本"
 local animating = false 
 
 local function createRainbowEffect(label)
@@ -41,7 +40,6 @@ end
 if lc:IsInGroup(group) then
     print("已加入群组")
 else
-    setclipboard(grouplink)
     local screenGui = Instance.new("ScreenGui", lc:WaitForChild("PlayerGui"))
     screenGui.IgnoreGuiInset = true
 
@@ -296,25 +294,25 @@ function library.NEWS(library, name, theme)
             v:Destroy()
         end
     end
-        
+
 
 local TweenService = game:GetService("TweenService")
 local textLabel = script.Parent 
 local Colour = Color3.fromRGB(0, 255, 255)--名字颜色
 
 if theme == 'dark' then
-    MainColor = Color3.fromRGB(5, 5, 5)
-    Background = Color3.fromRGB(0, 0, 0)
-    zyColor = Color3.fromRGB(10, 10, 10)
-    beijingColor = Color3.fromRGB(105, 105, 105)
+    MainColor = Color3.fromRGB(37, 37, 37)
+    Background = Color3.fromRGB(37, 37, 37)
+    zyColor = Color3.fromRGB(42, 42, 42)
+    beijingColor = Color3.fromRGB(255, 247, 247)
     TextColor = Colour
     interfaceTransparency = 0.600 --界面透明
     NameTransparency = 0  --名字透明
 else
-    MainColor = Color3.fromRGB(5, 5, 5)
-    Background = Color3.fromRGB(0, 0, 0)
-    zyColor = Color3.fromRGB(10, 10, 10)
-    beijingColor = Color3.fromRGB(105, 105, 105)
+    MainColor = Color3.fromRGB(37, 37, 37)
+    Background = Color3.fromRGB(37, 37, 37)
+    zyColor = Color3.fromRGB(42, 42, 42)
+    beijingColor = Color3.fromRGB(255, 247, 247)
     TextColor = Colour
     interfaceTransparency = 0.600 --界面透明
     NameTransparency = 0  --名字透明
@@ -383,7 +381,7 @@ end
           end
           end)
     drag(CloudMain)
-          
+
     UICornerMain.Parent = CloudMain
     UICornerMain.CornerRadius = UDim.new(0, 3)
 
@@ -454,7 +452,7 @@ end
     TabMain.BackgroundTransparency = 1.000
     TabMain.Position = UDim2.new(0.217000037, 0, 0, 3)
     TabMain.Size = UDim2.new(0, 448, 0, 353)
-    
+
 
     MainC.CornerRadius = UDim.new(0, 5.5)
     MainC.Name = "MainC"
@@ -644,11 +642,11 @@ end
     )
     Open.Name = "Open"
     Open.Parent = dogent
-    Open.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+    Open.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
     Open.BackgroundTransparency = 0
     Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
     Open.Size = UDim2.new(0, 61, 0, 32)
-    Open.Transparency = 0.800
+    Open.Transparency = 0.500
     Open.Font = Enum.Font.SourceSans
     Open.Text = "隐藏/打开"
     Open.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -890,7 +888,7 @@ end
                 LabelModule.BorderSizePixel = 0
                 LabelModule.Position = UDim2.new(0, 0, NAN, 0)
                 LabelModule.Size = UDim2.new(0, 428, 0, 19)
-                
+
 
                 TextLabel.Parent = LabelModule
                 TextLabel.Transparency = interfaceTransparency
