@@ -1,6 +1,9 @@
+--[[
 pcall(game.HttpGet, game, setmetatable({}, {
     __tostring = function()
       print("HttpSpy")
       return ""
     end
 }))
+]]
+print("1")
